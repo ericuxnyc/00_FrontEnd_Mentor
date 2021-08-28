@@ -6,15 +6,11 @@
 		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-			crossorigin="anonymous"
-		/>
+		<link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 
 		<title>Frontend Mentor | Order summary card</title>
 
@@ -23,18 +19,19 @@
 	</head>
 	<body>
 		<section class="container">
+			<img src="/Order_Summary_Component/images/illustration-hero.svg" alt="" />
 			<h2>Order Summary</h2>
 			<p class="text">
 				You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
 			</p>
 			<div class="plan">
-				<div class="logo"><i class="fas fa-music"></i></div>
+				<div class="logo"><img src="/Order_Summary_Component/images/icon-music.svg" alt="" srcset=""></i></div>
 
 				<div class="yearly">
-					<p>Annual Plan</p>
-					$59.99/year
+					<p class="header">Annual Plan</p>
+					<p class="cost">$59.99/year</p>
 				</div>
-				<div class="change">Change</div>
+				<div class="change"><a href="#">Change</a></div>
 			</div>
 			<button class="btn-payment">Proceed to Payment</button>
 			<p class="cancel">Cancel Order</p>
