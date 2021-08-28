@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 .attribution {
+	margin-top: 20px;
 	font-size: 11px;
 	text-align: center;
 }
@@ -17,11 +18,14 @@ section {
 	align-items: center;
 }
 body {
-	background-image: url('/Order_Summary_Component/images/pattern-background-desktop.svg');
+	background-image: url('/images/pattern-background-desktop.svg');
 	background-color: hsl(225, 100%, 98%);
 	background-repeat: no-repeat;
 	font-family: 'Red Hat Display', sans-serif;
-	padding: 80px;
+	padding-top: 30px;
+	background-size: contain;
+	justify-content: center;
+	align-items: center;
 }
 h2 {
 	font-family: 'Red Hat Display', sans-serif;
@@ -30,7 +34,7 @@ h2 {
 	font-weight: 900;
 }
 .container {
-	width: 440px;
+	width: 375px;
 	height: auto;
 	margin: auto;
 	padding: 0;
@@ -53,16 +57,16 @@ h2 {
 	height: 90px;
 	font-family: 'Red Hat Display', sans-serif;
 	display: flex;
-	justify-content: space-around;
+	justify-content: start;
 	align-items: center;
 	margin-bottom: 30px;
-	padding: 10px;
+	/* padding: 10px; */
 	border-radius: 15px;
 	background-color: #f7f9ff;
 }
 button.btn-payment {
 	font-family: 'Red Hat Display', sans-serif;
-	box-shadow: 5px 5px 15px grey;
+	box-shadow: 1px 10px 25px hsl(224, 23%, 55%);
 }
 .btn-payment {
 	font-size: 16px;
@@ -70,11 +74,14 @@ button.btn-payment {
 	border: none;
 	width: 350px;
 	height: 60px;
-	border-radius: 15px;
+	border-radius: 10px;
 	margin: 15 5px;
 	padding: 5px;
 	color: #fff;
 	background-color: #382ae1;
+}
+.btn-payment:hover {
+	background-color: hsl(224, 23%, 55%);
 }
 .cancel {
 	font-weight: 900;
@@ -82,23 +89,55 @@ button.btn-payment {
 	margin-bottom: 40px;
 	color: #717fa6;
 }
+.cancel:hover {
+	color: #000;
+}
 .change {
+	font-size: 14px;
 	margin-top: 10px;
 	color: #698dff;
 	text-decoration: none;
+	font-weight: 700;
+	padding-left: 70px;
 }
-
+.change a:hover {
+	color: hsl(224, 23%, 55%);
+}
 .container img {
-	/* width: 100%; */
+	width: 100%;
 	/* height: 100%; */
 	object-position: relative;
-	object-fit: cover;
+	object-fit: fill;
 	border-radius: 15px 15px 0 0px;
 }
 .header {
+	padding-bottom: 5px;
+	margin: 0;
 	color: #1f2e55;
 	font-weight: 900;
 }
 .cost {
 	color: #717fa6;
+}
+.logo {
+	/* width: 50px; */
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0;
+}
+@media (max-width: 400px) {
+	body {
+		/* width: 100vw; */
+		background-image: none;
+		transform: scale(0.8, 0.8);
+		margin-right: 30px;
+	}
+	.container {
+		margin-right: 50px;
+		width: 100vw;
+	}
+	.btn-payment,
+	.plan {
+		transform: scale(0.8, 0.8);
+	}
 }
