@@ -1,0 +1,74 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	font-family: 'Red Hat Display', sans-serif;
+}
+.container {
+	width: 300px;
+	height: auto;
+	margin: auto;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #fff;
+	text-justify: center;
+	box-shadow: 5px 5px 15px #717fa6;
+}
+.text {
+	color: #333;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	color: #717fa6;
+}
+.plan {
+	width: auto;
+	font-family: 'Red Hat Display', sans-serif;
+
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #f7f9ff;
+}
+button.btn-payment {
+	font-family: 'Red Hat Display', sans-serif;
+
+	height: 40px;
+	box-shadow: 5px 5px 15px grey;
+}
+.btn-payment {
+	border: none;
+	width: 250px;
+	height: 60px;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px;
+	color: #fff;
+	background-color: #382ae1;
+}
+.cancel {
+	color: #717fa6;
+}
+.change {
+	color: #698dff;
+}
+.logo {
+	padding: 15px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+
+	background-color: #dfe6fb;
+}
